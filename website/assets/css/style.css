@@ -1,0 +1,344 @@
+:root {
+  --udark: #150025;
+  --darkish: #270047;
+  --purplish: #330066;
+  --purply: #4b0088;
+  --razz: #dd0558;
+  --razzhov: #ff2377;
+}
+
+body {
+  background: var(--darkish);
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: "Red Hat Display";
+  transition-property: all;
+  transition-duration: 0.5s;
+  color: var(--udark);
+}
+
+.head {
+  background: var(--razz);
+  background: linear-gradient(136deg, var(--razz) 2%, var(--purplish) 97%);
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 50px var(--udark);
+}
+
+/* .head:active {
+  animation: rainbow-bg 20s linear;
+  animation-iteration-count: infinite;
+} */
+
+.nicelogo {
+  width: 250px;
+  transition-property: all;
+  transition-duration: 1.5s;
+  color: white;
+  position: absolute;
+  text-align: center;
+  align-self: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition-timing-function: ease-in-out;
+}
+
+.nicelogo:hover {
+  transform: scale(1.25);
+}
+
+.nicelogo:active {
+  width: 440px;
+}
+
+.coologo {
+  width: 230px;
+  border: white;
+  border-radius: 6969px;
+  border-style: solid;
+  border-width: 5px;
+  box-shadow: 0 0 20px var(--udark);
+  margin: 45px;
+}
+
+.aboutbox {
+  width: 90%;
+  background: var(--purply);
+  color: #fff;
+  justify-content: center;
+  margin: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px var(--udark);
+  text-align: center;
+  align-self: center;
+}
+
+.aboutbox:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  font-size: 100px;
+  margin: 0px;
+  color: white;
+}
+
+a {
+  color: var(--razz);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--razzhov);
+  font-weight: bolder;
+}
+
+.muProfile {
+  border-radius: 6969px;
+  margin-top: 50px;
+  width: 280px;
+  box-shadow: 0 0 20px var(--purplish);
+}
+
+.occupation {
+  font-size: 40px;
+  margin: 0px;
+  font-weight: lighter !important;
+}
+
+.aboutinfo {
+  font-size: 25px;
+  margin: 40px;
+}
+
+.aboutbox_container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#muatextag {
+  color: #7289da;
+  font-weight: bold;
+}
+
+#muatextag:hover {
+  color: #8ca5ff;
+}
+
+.social-icons {
+  width: 35px;
+  margin: 20px;
+}
+
+.social-icons:hover {
+  transform: scale(1.25);
+}
+
+.portdesc {
+  font-size: 20px;
+  margin: 30px;
+  color: white;
+}
+
+.ytframe {
+  border-radius: 10px;
+  box-shadow: 0 0 20px var(--udark);
+  margin: 35px;
+}
+
+.footer {
+  box-shadow: 0 0 20px var(--udark);
+  color: white;
+}
+
+p,
+b,
+h2 {
+  color: white;
+}
+
+.nav_button {
+  color: white;
+  margin: 20px;
+  font-size: 30px;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background: var(--purply);
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.nav_button:hover {
+  box-shadow: 0 0 10px var(--udark);
+  transform: scale(1.05);
+}
+
+.project {
+  margin: 20px;
+  background: linear-gradient(136deg, var(--razz) 2%, var(--purplish) 97%);
+  height: 150%;
+  width: 70%;
+  border-radius: 15px;
+  text-align: center;
+  align-self: center;
+  font-size: 20px;
+}
+
+.project:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px var(--udark);
+}
+
+.proj_container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.proj_desc {
+  font-weight: normal;
+}
+
+#exylBox {
+  background: rgb(249, 200, 75);
+  background: linear-gradient(
+    90deg,
+    rgb(255, 183, 0) 0%,
+    rgb(255, 153, 0) 100%
+  );
+}
+
+/*media queries*/
+@media (max-width: 630px) {
+  body {
+    overflow: visible;
+  }
+
+  .nicelogo {
+    width: 200px;
+  }
+
+  .nicelogo:active {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    width: 300px;
+  }
+
+  .aboutbox {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  .occupation {
+    font-size: 30px;
+  }
+
+  .aboutinfo {
+    font-size: 20px;
+    margin: 20px;
+  }
+
+  .social-icons {
+    margin: 5px;
+    margin-top: 15px;
+    width: 30px;
+  }
+
+  .muProfile {
+    width: 200px;
+  }
+
+  .ytframe {
+    height: 300px;
+  }
+
+  .project {
+    width: 95%;
+  }
+}
+
+@media (max-height: 500px) {
+  body {
+    overflow: visible;
+  }
+
+  .social-icons {
+    opacity: 0;
+  }
+
+  .nicelogo {
+    width: 200px;
+  }
+
+  .aboutbox {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  .occupation {
+    font-size: 30px;
+  }
+
+  .aboutinfo {
+    font-size: 20px;
+    margin: 20px;
+  }
+
+  .muProfile {
+    width: 200px;
+  }
+
+  .ytframe {
+    height: 350px;
+    width: 80%;
+  }
+
+  .project {
+    width: 90%;
+  }
+}
+
+html::-webkit-scrollbar {
+  width: 10px !important;
+  height: 10px !important;
+}
+html::-webkit-scrollbar-thumb {
+  background: #cd90ff !important;
+  border: 2px solid transparent !important;
+  border-radius: 20px;
+  /* border-radius: 10px !important; */
+}
+html::-webkit-scrollbar-track {
+  background: linear-gradient(136deg, var(--razz) 2%, var(--purplish) 97%);
+  border-radius: 20px;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: #c680ff !important;
+}
+html::-webkit-scrollbar-thumb:active {
+  background: #b253ff !important;
+}
+html::-webkit-scrollbar-corner {
+  background: #a331ff !important;
+}

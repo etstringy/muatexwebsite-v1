@@ -1,0 +1,37 @@
+body {
+  background: #270047;
+  margin: 0;
+}
+
+* {
+  font-family: "Red Hat Display";
+  color: white;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.head {
+  background: rgb(221, 5, 88);
+  background: linear-gradient(
+    136deg,
+    rgba(221, 5, 88, 1) 2%,
+    rgba(51, 0, 102, 1) 97%
+  );
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.head:active {
+  animation: rainbow-bg 2.5s linear;
+  animation-iteration-count: infinite;
+}
+
+.duc {
+  width: 500px;
+  position: absolute;
+  text-align: center;
+  align-self: center;
+}
